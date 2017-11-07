@@ -3,11 +3,11 @@
 We'll be building out this app as our lab today! WOOHOO!!
 
 We'll be working on it in five stages:
-- [Stage 1](#Stage-1): Creating a static version of it from HTML
-- [Stage 2](#Stage-2): Adding a random emoji when the emoji is clicked
-- [Stage 3](#Stage-3): Making a random restaurant appear when the page loads, and every time the button is clicked
-- [Stage 4](#Stage-4): Conditionally rendering a LOADING message
-- [Stage 5](#Stage-5): Listing out all the restaurants in the database.
+- [Stage 1](#stage-1): Creating a static version of it from HTML
+- [Stage 2](#stage-2): Adding a random emoji when the emoji is clicked
+- [Stage 3](#stage-3): Making a random restaurant appear when the page loads, and every time the button is clicked
+- [Stage 4](#stage-4): Conditionally rendering a LOADING message
+- [Stage 5](#stage-5): Listing out all the restaurants in the database.
 
 ## Stage 1
 

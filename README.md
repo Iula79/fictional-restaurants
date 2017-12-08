@@ -29,7 +29,7 @@ Setting the background image on the div is a little different. Here is the line 
 style={{backgroundImage:'url(https://img.buzzfeed.com/buzzfeed-static/static/2015-07/16/12/enhanced/webdr06/enhanced-32098-1437062439-1.png?crop=590:390;0,55&amp;downsize=715:*&amp;output-format=auto&amp;output-quality=auto)',}}
 ```
 
-[Here is the solution for the first part.](https://git.generalassemb.ly/wdi-nyc-thundercats/LAB_U03_D03_Fictional-Restaurant-Roulette/pull/1/files)
+[Here is the solution for the first part.](https://git.generalassemb.ly/wdi-nyc-hamilton/fictional-restaurants-lab/compare/stage-one)
 
 ## Stage 2
 
@@ -62,7 +62,7 @@ It is up to you to decide where they go... 🤔
 
 **Remember**: With click events, you have to _bind_ your functions.
 
-[Here is the solution for this part.](https://git.generalassemb.ly/wdi-nyc-thundercats/LAB_U03_D03_Fictional-Restaurant-Roulette/pull/2/files)
+[Here is the solution for this part.](https://git.generalassemb.ly/wdi-nyc-hamilton/fictional-restaurants-lab/compare/stage-one...stage-two)
 
 ## Stage 3
 
@@ -112,7 +112,7 @@ And, last but not least, here is a line of code you will need for this part:
 style={{backgroundImage: `url(${props.restaurant.image})`}}
 ```
 
-[Here is the solution for this part.](https://git.generalassemb.ly/wdi-nyc-thundercats/LAB_U03_D03_Fictional-Restaurant-Roulette/pull/3/files)
+[Here is the solution for this part.](https://git.generalassemb.ly/wdi-nyc-hamilton/fictional-restaurants-lab/compare/stage-two...stage-three)
 
 ## Stage 4
 
@@ -123,7 +123,7 @@ For this stage, use whatever method of conditional rendering you'd like to rende
 - Maybe you need to have an `apiDataLoaded` message in `state` 🤔
 - Doing this means you can simplify your `state` as well -- instead of building out the `apiData` object, you can just set it to `null`, since you won't need to render the `Restaurant` component until your data has loaded.
 
-[Here is the solution for this stage.](https://git.generalassemb.ly/wdi-nyc-thundercats/LAB_U03_D03_Fictional-Restaurant-Roulette/pull/4/files)
+[Here is the solution for this stage.](https://git.generalassemb.ly/wdi-nyc-hamilton/fictional-restaurants-lab/compare/stage-three...stage-four)
 
 ## Stage 5
 
@@ -136,4 +136,4 @@ For this stage, we'll be getting all the restaurants from the fictional restaura
     - Within the `RestaurantList` component, you should map over the list of restaurants and return a `ShortRestaurant` component, passing the data about each individual restaurant into it.
 - You should conditionally render the `RestaurantList` component based on whether or not the API data has loaded.
 
-[Here's the solution for this stage.](https://git.generalassemb.ly/wdi-nyc-thundercats/LAB_U03_D03_Fictional-Restaurant-Roulette/pull/5/files)
+[Here's the solution for this stage.](https://git.generalassemb.ly/wdi-nyc-hamilton/fictional-restaurants-lab/compare/stage-four...stage-five)

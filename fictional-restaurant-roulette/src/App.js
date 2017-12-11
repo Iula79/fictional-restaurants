@@ -6,11 +6,36 @@ import RestaurantForm from './RestaurantForm'
 
 
 class App extends Component {
+  state = {
+    restaurants: [],
+    apiDataLoaded: false
+  }
+  componentDidMount() {
+    fetch('http://fictional-restaurants.herokuapp.com/api/restaurants')
+      .then((result) => {
+        return result.json()
+      })
+      .then(result => {
+        console.log(result.data)
+        this.setState({
+          restaurants: result.data.restaurants,
+          apiDataLoaded: true
+        })
+      });
+  }
+
   render() {
     return (
       <div className="App">
-        
-        <RestaurantForm />
+      {
+        this.state.apiDataLoaded?
+      
+        (<div>
+          <RestaurantForm  restaurants={this.state.restaurants}/>
+          
+          </div>):
+        (<p>Loading ...</p>  )
+      }
         <Splash />
       </div>
     );

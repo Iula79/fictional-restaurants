@@ -3,16 +3,22 @@ import RestaurantSelector from './RestaurantSelector'
 import RestaurantEditor from './RestaurantEditor'
 
 class RestaurantForm extends Component{
-    state = {
-        restaurants:{}
+    constructor(props) {
+        super(props);
+        this.selectRestaurantById = this.selectRestaurantById.bind(this)
     }
-    selectedRestaurantById(id){
+
+    state = {
+        selectedRestaurant:{},
+        
+    }
+    selectRestaurantById(id){
         //callback because we do not want to change the state directly
         this.setState((prevState, props)=>{
             return {
                 selectedRestaurant:this.props.restaurants.find( restaurant=>{
-                return restaurant.id ==id;
-                })
+                return restaurant.id ===id;
+                }) || {}
             }
         })
 
@@ -20,8 +26,10 @@ class RestaurantForm extends Component{
     render(){
     return (
         <div id="RestaurantForm">
-        <RestaurantSelector values={['option1','option2', 'option3']}/>
-        <RestaurantEditor />
+        <RestaurantSelector selectRestaurantById={this.selectRestaurantById} restaurants={this.props.restaurants}/>
+        <RestaurantEditor selectedRestaurant={this.state.selectedRestaurant}/>
+        <button onClick={() => this.selectRestaurantById(1)} />
+        <p>{this.state.selectedRestaurant.name}</p>
         </div>
     )}
 }

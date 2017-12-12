@@ -1,14 +1,22 @@
 import React from 'react';
 
 
-function RestaurantSelector(props){
-
+function RestaurantSelector(props) {
+    function handleChange(e){
+        console.log(e.target.value)
+    }
     return (
+        
         <div>
-            <select name="" id="">
-            <option value="A">{props.values[0]}</option>
-            <option value="B">{props.values[1]}</option>
-            <option value="C">{props.values[2]}</option>
+            <select onChange={handleChange} name="" id="">
+            <option value="new">Add new</option>
+                {
+                    props.restaurants.map(rest => (
+                        <option value={rest.id} key={rest.id}>{rest.name}</option>
+                    ))
+
+                } 
+                
             </select>
         </div>
 
